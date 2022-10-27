@@ -1,0 +1,132 @@
+/*General Styling*/
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+
+  line-height: normal;
+  font-weight: 400;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  /* width: 100vw; */
+  min-height: 100vh;
+  font-size: 1.4rem;
+  color: #2b283a;
+}
+
+/*Navbar*/
+
+nav {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #0089c9;
+}
+
+.nav--logo {
+  width: 32px;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/*Card*/
+
+.cards--list {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  width: 80vw;
+  display: flex;
+
+  padding: 2rem;
+}
+
+
+.card--img {
+  min-width: 125px;
+  max-width: 460px;
+  margin-right: 3rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px 2px #19303a5b;
+  transition: transform 330ms ease-in-out;
+}
+
+.card--img:hover {
+  transform: scale(1.1);
+}
+
+.card--content {
+  align-self: center;
+}
+
+.card--location {
+  display: flex;
+  align-items: baseline;
+}
+
+.card--country {
+  margin: 0 3rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.card--location__link {
+  color: #918e9b;
+}
+
+.card--city {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem;
+}
+
+.card--dates {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.card--description {
+  line-height: 150%;
+}
+
+.card--separator {
+  display: none;
+  color: #2b283a;
+}
+
+@media (max-width: 950px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card--img {
+    margin-bottom: 1.5rem;
+  }
+
+  .card--description {
+    margin-bottom: 3rem;
+  }
+
+  .card--separator {
+    display: block;
+  }
+}
